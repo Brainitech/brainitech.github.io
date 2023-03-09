@@ -15,7 +15,7 @@
 
 
 body {
-    background-image: url("images/background.jpg");
+    background-image: url("images/bg.jpg");
     background-color: #101010;
     background-size: cover;
     background-repeat: no-repeat;
@@ -274,6 +274,17 @@ section h4 {
     line-height: 0.5;
 }
 
+.pro p a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 0.5;
+}
+
+.pro p a:hover {
+  color:#00aeff;
+  transition:  all 0.5 ease-in-out;
+}
 
 .pro h3 button {
     text-decoration: none;
@@ -298,7 +309,6 @@ section h4 {
 .pro h3 button a:hover {
     color: #000000;
     transition: all 0.2s ease-in-out;
-    scale: 125%;
 }
 
 h3 button:hover {    
