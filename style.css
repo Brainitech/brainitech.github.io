@@ -13,7 +13,6 @@
   z-index: 100;
 }
 
-
 body {
     background-image: url("images/bg.jpg");
     background-color: #101010;
@@ -88,7 +87,7 @@ header {
 nav{
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 50px;
   background-color: #0005;
   line-height: 50px;
@@ -192,17 +191,72 @@ nav ul li a:hover {
   }
 
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
 /* Main styles */
 main {
     padding: 6rem;
     background-color: rgba(0, 0, 0, 0.456);
     margin: 6rem;
     margin-bottom: 0;
+}
+
+@media only screen and (max-width:720px) {
+  main {
+    padding: 0rem;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.456);
+    margin-bottom: 0;
+  }
+  .profile-pic {
+    display: none;
+  }
+  
+  .profile-pic img {
+    display: none;
+  }
+
+  section {
+    height: 10vh;
+  }
+
+  section h2 {
+      font-size: 1rem;
+      padding-top: 3rem;
+      margin-bottom: 3rem;
+  }
+
+  section h3 {
+      font-size: 1rem;
+      padding-top: 3rem;
+      margin-bottom: 1.5rem;
+  }
+
+  section h4 {
+    font-size: 1rem;
+    padding-top: 3rem;
+    margin-bottom: 0rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  #projects {
+    height: 150vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  #home {
+    font-size: 0.5rem;
+  }
+
+  .social {
+    padding-top: 1rem;
+  }
 }
 
 .profile-pic {
@@ -271,7 +325,7 @@ section h4 {
 
 .pro p {
     font-size: 1rem;
-    line-height: 0.5;
+    line-height: 1.5rem;
 }
 
 .pro p a {
@@ -451,7 +505,8 @@ footer {
   text-align: center;
   font-size: 0.5rem;
   bottom: 0;
-  width: 100%;
-  position: absolute;
+  width: 100vw;
+  position: relative;
   padding-top: 2rem;
+  padding-bottom: 1rem;
   }
