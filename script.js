@@ -85,7 +85,6 @@ class TextScramble {
     'I am a Programmer',
     'I am a Gamer',
     'I am Everywhere',
-    'Samhit is GAY',
     ]
   
   const el = document.querySelector('.Greeting')
